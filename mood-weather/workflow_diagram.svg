@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1100" width="1600" height="1100" font-family="Helvetica, Arial, sans-serif"><defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#0b0b0b"/></marker></defs><rect width="1600" height="1100" fill="#f9f9f7"/><text x="40" y="52" font-size="30" font-weight="700" text-anchor="start" fill="#0b0b0b" >MOOD WEATHER  -  workflow and methodology</text>
+<text x="40" y="82" font-size="15" font-weight="400" text-anchor="start" fill="#52514e" >How the most popular artwork at the Art Institute of Chicago becomes the temperature, air speed, humidity and light of a room.</text>
+<rect x="40" y="120" width="260" height="205" rx="14" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="3.5"/>
+<text x="58" y="154" font-size="20" font-weight="700" text-anchor="start" fill="#0b0b0b" >1  Art Institute API</text>
+<text x="58" y="184" font-size="14" font-weight="400" text-anchor="start" fill="#3a3936" >Live ranking of the highlighted</text>
+<text x="58" y="204" font-size="14" font-weight="400" text-anchor="start" fill="#3a3936" >works on view (boost_rank).</text>
+<text x="58" y="224" font-size="14" font-weight="400" text-anchor="start" fill="#3a3936" >The top 12 take turns, one per</text>
+<text x="58" y="244" font-size="14" font-weight="400" text-anchor="start" fill="#3a3936" >minute.</text>
+<text x="58" y="264" font-size="14" font-weight="400" text-anchor="start" fill="#3a3936" >No live visitor counts exist, so</text>
+<text x="58" y="284" font-size="14" font-weight="400" text-anchor="start" fill="#3a3936" >this stands in for 'most popular</text>
+<text x="58" y="304" font-size="14" font-weight="400" text-anchor="start" fill="#3a3936" >now'.</text>
+<rect x="355" y="120" width="260" height="205" rx="14" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="3.5"/>
+<text x="373" y="154" font-size="20" font-weight="700" text-anchor="start" fill="#0b0b0b" >2  aic_feed.py</text>
+<text x="373" y="184" font-size="14" font-weight="400" text-anchor="start" fill="#3a3936" >Looks up what that artwork usually</text>
+<text x="373" y="204" font-size="14" font-weight="400" text-anchor="start" fill="#3a3936" >evokes (course psychophysiology</text>
+<text x="373" y="224" font-size="14" font-weight="400" text-anchor="start" fill="#3a3936" >pipeline):</text>
+<text x="373" y="244" font-size="14" font-weight="400" text-anchor="start" fill="#3a3936" >valence, arousal, tension,</text>
+<text x="373" y="264" font-size="14" font-weight="400" text-anchor="start" fill="#3a3936" >luminance.</text>
+<rect x="670" y="120" width="260" height="205" rx="14" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="3.5"/>
+<text x="688" y="154" font-size="20" font-weight="700" text-anchor="start" fill="#0b0b0b" >3  app.py: IF-THEN</text>
+<text x="688" y="184" font-size="14" font-weight="400" text-anchor="start" fill="#3a3936" >Five numbers polled every 3 s.</text>
+<text x="688" y="204" font-size="14" font-weight="400" text-anchor="start" fill="#3a3936" >One rule per system, read as IF</text>
+<text x="688" y="224" font-size="14" font-weight="400" text-anchor="start" fill="#3a3936" >feed &gt; value THEN setpoint ELSE</text>
+<text x="688" y="244" font-size="14" font-weight="400" text-anchor="start" fill="#3a3936" >setpoint.</text>
+<text x="688" y="264" font-size="14" font-weight="400" text-anchor="start" fill="#3a3936" >Rules live in Python only.</text>
+<rect x="985" y="120" width="260" height="205" rx="14" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="3.5"/>
+<text x="1003" y="154" font-size="20" font-weight="700" text-anchor="start" fill="#0b0b0b" >4  Building systems</text>
+<text x="1003" y="184" font-size="14" font-weight="400" text-anchor="start" fill="#3a3936" >3 heat pumps, 2 fans, 1</text>
+<text x="1003" y="204" font-size="14" font-weight="400" text-anchor="start" fill="#3a3936" >humidifier,</text>
+<text x="1003" y="224" font-size="14" font-weight="400" text-anchor="start" fill="#3a3936" >6 can lights (they define the six</text>
+<text x="1003" y="244" font-size="14" font-weight="400" text-anchor="start" fill="#3a3936" >zones).</text>
+<text x="1003" y="264" font-size="14" font-weight="400" text-anchor="start" fill="#3a3936" >Each receives a setpoint.</text>
+<rect x="1300" y="120" width="260" height="205" rx="14" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="3.5"/>
+<text x="1318" y="154" font-size="20" font-weight="700" text-anchor="start" fill="#0b0b0b" >5  Air simulation</text>
+<text x="1318" y="184" font-size="14" font-weight="400" text-anchor="start" fill="#3a3936" >Real 2D Navier-Stokes, 96 x 64</text>
+<text x="1318" y="204" font-size="14" font-weight="400" text-anchor="start" fill="#3a3936" >cells.</text>
+<text x="1318" y="224" font-size="14" font-weight="400" text-anchor="start" fill="#3a3936" >Temperature, humidity, wind and</text>
+<text x="1318" y="244" font-size="14" font-weight="400" text-anchor="start" fill="#3a3936" >light fields in a 12 x 8 x 4 m</text>
+<text x="1318" y="264" font-size="14" font-weight="400" text-anchor="start" fill="#3a3936" >room.</text>
+<text x="1318" y="284" font-size="14" font-weight="400" text-anchor="start" fill="#3a3936" >The room answers over time.</text>
+<path d="M300 222 L355 222" fill="none" stroke="#0b0b0b" stroke-width="2.5" marker-end="url(#a)"/>
+<path d="M615 222 L670 222" fill="none" stroke="#0b0b0b" stroke-width="2.5" marker-end="url(#a)"/>
+<path d="M930 222 L985 222" fill="none" stroke="#0b0b0b" stroke-width="2.5" marker-end="url(#a)"/>
+<path d="M1245 222 L1300 222" fill="none" stroke="#0b0b0b" stroke-width="2.5" marker-end="url(#a)"/>
+<rect x="40" y="395" width="260" height="175" rx="14" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="3.5"/>
+<text x="58" y="429" font-size="20" font-weight="700" text-anchor="start" fill="#0b0b0b" >6  Website</text>
+<text x="58" y="459" font-size="14" font-weight="400" text-anchor="start" fill="#3a3936" >Draws the room, graphs, live rules</text>
+<text x="58" y="479" font-size="14" font-weight="400" text-anchor="start" fill="#3a3936" >and this diagram.</text>
+<text x="58" y="499" font-size="14" font-weight="400" text-anchor="start" fill="#3a3936" >Computes nothing.</text>
+<rect x="670" y="395" width="260" height="175" rx="14" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="3.5"/>
+<text x="688" y="429" font-size="20" font-weight="700" text-anchor="start" fill="#0b0b0b" >7  JSON, every 1 s</text>
+<text x="688" y="459" font-size="14" font-weight="400" text-anchor="start" fill="#3a3936" >exports/: one file per system,</text>
+<text x="688" y="479" font-size="14" font-weight="400" text-anchor="start" fill="#3a3936" >plus _room.json (zone values,</text>
+<text x="688" y="499" font-size="14" font-weight="400" text-anchor="start" fill="#3a3936" >current artwork).</text>
+<text x="688" y="519" font-size="14" font-weight="400" text-anchor="start" fill="#3a3936" >Written then renamed, so never</text>
+<text x="688" y="539" font-size="14" font-weight="400" text-anchor="start" fill="#3a3936" >half-written.</text>
+<rect x="985" y="395" width="260" height="175" rx="14" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="3.5"/>
+<text x="1003" y="429" font-size="20" font-weight="700" text-anchor="start" fill="#0b0b0b" >8  Timer + Read File</text>
+<text x="1003" y="459" font-size="14" font-weight="400" text-anchor="start" fill="#3a3936" >Timer (1000 ms) re-triggers Read</text>
+<text x="1003" y="479" font-size="14" font-weight="400" text-anchor="start" fill="#3a3936" >File.</text>
+<text x="1003" y="499" font-size="14" font-weight="400" text-anchor="start" fill="#3a3936" >A relay script keeps Read File</text>
+<text x="1003" y="519" font-size="14" font-weight="400" text-anchor="start" fill="#3a3936" >refreshing.</text>
+<rect x="1300" y="395" width="260" height="175" rx="14" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="3.5"/>
+<text x="1318" y="429" font-size="20" font-weight="700" text-anchor="start" fill="#0b0b0b" >9  Grasshopper script</text>
+<text x="1318" y="459" font-size="14" font-weight="400" text-anchor="start" fill="#3a3936" >Parses the JSON and rebuilds</text>
+<text x="1318" y="479" font-size="14" font-weight="400" text-anchor="start" fill="#3a3936" >boxes, flow lines, lights and zone</text>
+<text x="1318" y="499" font-size="14" font-weight="400" text-anchor="start" fill="#3a3936" >colours.</text>
+<path d="M800 325 L800 395" fill="none" stroke="#0b0b0b" stroke-width="2.5" marker-end="url(#a)"/>
+<path d="M760 325 L760 359 L170 359 L170 395" fill="none" stroke="#0b0b0b" stroke-width="2.5" marker-end="url(#a)"/>
+<path d="M930 482 L985 482" fill="none" stroke="#0b0b0b" stroke-width="2.5" marker-end="url(#a)"/>
+<path d="M1245 482 L1300 482" fill="none" stroke="#0b0b0b" stroke-width="2.5" marker-end="url(#a)"/>
+<rect x="1300" y="610" width="260" height="120" rx="14" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="3.5"/>
+<text x="1318" y="644" font-size="20" font-weight="700" text-anchor="start" fill="#0b0b0b" >10  Rhino digital twin</text>
+<text x="1318" y="674" font-size="14" font-weight="400" text-anchor="start" fill="#3a3936" >The same room, same artwork, same</text>
+<text x="1318" y="694" font-size="14" font-weight="400" text-anchor="start" fill="#3a3936" >setpoints as the page.</text>
+<path d="M1430 570 L1430 610" fill="none" stroke="#0b0b0b" stroke-width="2.5" marker-end="url(#a)"/>
+<rect x="40" y="610" width="1200" height="456" rx="14" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="3.5"/>
+<text x="60" y="644" font-size="18" font-weight="700" text-anchor="start" fill="#0b0b0b" >THE MECHANISM  -  every input, every rule, every output</text>
+<text x="60" y="676" font-size="12" font-weight="700" text-anchor="start" fill="#52514e" >ARTWORK MEASURE (LIVE INPUT)</text>
+<text x="380" y="676" font-size="12" font-weight="700" text-anchor="start" fill="#52514e" >RULE IN app.py</text>
+<text x="950" y="676" font-size="12" font-weight="700" text-anchor="start" fill="#52514e" >THE ROOM RESPONDS</text>
+<line x1="60" y1="686" x2="1220" y2="686" stroke="#0b0b0b" stroke-width="1.5"/>
+<text x="60" y="724" font-size="18" font-weight="700" text-anchor="start" fill="#0b0b0b" >Valence</text>
+<text x="60" y="746" font-size="13" font-weight="400" text-anchor="start" fill="#52514e" >sad / heavy  &lt;-&gt;  happy / uplifting</text>
+<text x="60" y="766" font-size="12" font-weight="700" text-anchor="start" fill="#52514e" >drives TEMPERATURE</text>
+<text x="380" y="724" font-size="13" font-weight="400" text-anchor="start" fill="#0b0b0b" >Heat pump A, Heat pump B, Heat pump C: IF valence &gt; 62 / 68 /</text>
+<text x="380" y="743" font-size="13" font-weight="400" text-anchor="start" fill="#0b0b0b" >74 THEN 24 / 27 / 31 °C, ELSE 13 / 14 / 15 °C.</text>
+<text x="950" y="724" font-size="13" font-weight="400" text-anchor="start" fill="#0b0b0b" >Sadder artwork, colder room (13 to 15</text>
+<text x="950" y="743" font-size="13" font-weight="400" text-anchor="start" fill="#0b0b0b" >°C). The happiest artwork warms it up</text>
+<text x="950" y="762" font-size="13" font-weight="400" text-anchor="start" fill="#0b0b0b" >to 31 °C.</text>
+<line x1="60" y1="786" x2="1220" y2="786" stroke="#c4c4bf" stroke-width="1"/>
+<text x="60" y="816" font-size="18" font-weight="700" text-anchor="start" fill="#0b0b0b" >Arousal</text>
+<text x="60" y="838" font-size="13" font-weight="400" text-anchor="start" fill="#52514e" >gentle  &lt;-&gt;  turbulent</text>
+<text x="60" y="858" font-size="12" font-weight="700" text-anchor="start" fill="#52514e" >drives AIR SPEED</text>
+<text x="380" y="816" font-size="13" font-weight="400" text-anchor="start" fill="#0b0b0b" >Fan A, Fan B: IF arousal &gt; 24 / 38 THEN 2.2 / 4.8 m/s, ELSE</text>
+<text x="380" y="835" font-size="13" font-weight="400" text-anchor="start" fill="#0b0b0b" >0.5 / 0.3 m/s.</text>
+<text x="950" y="816" font-size="13" font-weight="400" text-anchor="start" fill="#0b0b0b" >Gentle artwork, near-still air.</text>
+<text x="950" y="835" font-size="13" font-weight="400" text-anchor="start" fill="#0b0b0b" >Turbulent artwork, two crossing jets.</text>
+<line x1="60" y1="878" x2="1220" y2="878" stroke="#c4c4bf" stroke-width="1"/>
+<text x="60" y="908" font-size="18" font-weight="700" text-anchor="start" fill="#0b0b0b" >Tension</text>
+<text x="60" y="930" font-size="13" font-weight="400" text-anchor="start" fill="#52514e" >slack  &lt;-&gt;  taut</text>
+<text x="60" y="950" font-size="12" font-weight="700" text-anchor="start" fill="#52514e" >drives HUMIDITY</text>
+<text x="380" y="908" font-size="13" font-weight="400" text-anchor="start" fill="#0b0b0b" >Humidifier A: IF tension &gt; 50 THEN 25 %RH, ELSE 60 %RH.</text>
+<text x="950" y="908" font-size="13" font-weight="400" text-anchor="start" fill="#0b0b0b" >Taut artwork dries the air; slack</text>
+<text x="950" y="927" font-size="13" font-weight="400" text-anchor="start" fill="#0b0b0b" >artwork lets it go damp.</text>
+<line x1="60" y1="970" x2="1220" y2="970" stroke="#c4c4bf" stroke-width="1"/>
+<text x="60" y="1000" font-size="18" font-weight="700" text-anchor="start" fill="#0b0b0b" >Luminance</text>
+<text x="60" y="1022" font-size="13" font-weight="400" text-anchor="start" fill="#52514e" >dark  &lt;-&gt;  bright (CIE L*)</text>
+<text x="60" y="1042" font-size="12" font-weight="700" text-anchor="start" fill="#52514e" >drives LIGHT LEVEL (inverted)</text>
+<text x="380" y="1000" font-size="13" font-weight="400" text-anchor="start" fill="#0b0b0b" >Light 2, Light 5, Light 1, Light 3, Light 4, Light 6: each lit</text>
+<text x="380" y="1019" font-size="13" font-weight="400" text-anchor="start" fill="#0b0b0b" >(1.0) only while luminance &lt; 80 / 75 / 72 / 68 / 64 / 58,</text>
+<text x="380" y="1038" font-size="13" font-weight="400" text-anchor="start" fill="#0b0b0b" >otherwise 0.06.</text>
+<text x="950" y="1000" font-size="13" font-weight="400" text-anchor="start" fill="#0b0b0b" >Brighter artwork, dimmer room: the</text>
+<text x="950" y="1019" font-size="13" font-weight="400" text-anchor="start" fill="#0b0b0b" >space supplies what the picture lacks.</text>
+<text x="40" y="1082" font-size="12" font-weight="400" text-anchor="start" fill="#52514e" >Valence, arousal and tension are research-based estimates computed from image features, not measurements of any visitor. Thresholds are calibrated to the spread of the current top-ranked works.</text></svg>

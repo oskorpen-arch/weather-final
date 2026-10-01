@@ -1,0 +1,6 @@
+git init
+git add .
+git commit -m "Initial commit for Mood Weather"
+git branch -M main
+git remote add origin https://github.com/<your-username>/mood-weather-exhibition.git
+git push -u origin main

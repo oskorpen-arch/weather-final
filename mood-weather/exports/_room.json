@@ -1,0 +1,118 @@
+{
+  "schema": "iarc425.room.v1",
+  "exported_utc": "2026-10-01T14:28:12+00:00",
+  "room_m": {
+    "w": 12.0,
+    "d": 8.0,
+    "h": 4.0
+  },
+  "zone_grid": {
+    "cols": 3,
+    "rows": 2
+  },
+  "zone_centres_m": [
+    {
+      "zone": 1,
+      "x": 2.0,
+      "y": 2.0
+    },
+    {
+      "zone": 2,
+      "x": 6.0,
+      "y": 2.0
+    },
+    {
+      "zone": 3,
+      "x": 10.0,
+      "y": 2.0
+    },
+    {
+      "zone": 4,
+      "x": 2.0,
+      "y": 6.0
+    },
+    {
+      "zone": 5,
+      "x": 6.0,
+      "y": 6.0
+    },
+    {
+      "zone": 6,
+      "x": 10.0,
+      "y": 6.0
+    }
+  ],
+  "zone_values": {
+    "temperature": [
+      18.71,
+      18.63,
+      17.98,
+      17.3,
+      18.1,
+      17.16
+    ],
+    "humidity": [
+      55.47,
+      55.51,
+      55.79,
+      55.3,
+      55.51,
+      55.7
+    ],
+    "wind": [
+      0.72,
+      0.619,
+      0.675,
+      0.431,
+      0.872,
+      0.493
+    ],
+    "light": [
+      124.3,
+      240.3,
+      124.3,
+      85.5,
+      129.6,
+      85.5
+    ]
+  },
+  "field_ranges": {
+    "temperature": [
+      10.0,
+      32.0
+    ],
+    "humidity": [
+      10.0,
+      90.0
+    ],
+    "wind": [
+      0.0,
+      2.5
+    ],
+    "light": [
+      0.0,
+      400.0
+    ]
+  },
+  "exhibition": {
+    "artwork": {
+      "id": 151363,
+      "title": "Weaving",
+      "artist": "Diego Rivera",
+      "date": "1936",
+      "image_url": "https://www.artic.edu/iiif/2/96e26f4f-c578-b14c-2714-2a565f19e0d0/full/400,/0/default.jpg",
+      "boost_rank": 16,
+      "mood": "Luminous Serenity",
+      "valence_label": "Radiant & Uplifting",
+      "arousal_label": "Measured Engagement"
+    },
+    "valence": 78.8,
+    "arousal": 35.3,
+    "tension": 48.2,
+    "luminance": 78.5,
+    "position": 5,
+    "queue_length": 12,
+    "next_change_in_s": 47.1,
+    "source": "aic-live"
+  }
+}
